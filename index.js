@@ -12,7 +12,14 @@ app.command('start', async({from, reply}) => {
   let {id, username} = from
   let student = await find(username, id)
   if (student) {
-    return reply('Tekrardan hoş geldin, ders programın için tekrardan bildirim almaya başlayacaksın. Ders programın değişti ise tekrar gönderebilirsin.')
+    return reply('Tekrardan hoş geldin, ders programın için tekrardan bildirim almaya başlayacaksın. Ders programın değişti ise tekrar gönderebilirsin.', Markup
+      .keyboard([
+        ['🔍 Tüm dersler'],
+        ['😎 Sıradaki ders']
+      ])
+      .oneTime()
+      .extra()
+    )
   } else {
     return reply('Merhaba, ders programını csv formatında gönderirsen sana düzenli aralıklarla derslerini göndereceğim.')
   }
