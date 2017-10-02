@@ -1,0 +1,9 @@
+{
+  "name": "pau-ders-bot",
+  "version": "1.0.0",
+  "description": "Pamukkale Üniversitesi Ders Botu",
+  "main": "index.js",
+  "repository": "git@github.com:cagataycali/pau-ders-bot.git",
+  "author": "Çağatay Çalı",
+  "license": "MIT"
+}
