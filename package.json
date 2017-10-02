@@ -5,5 +5,13 @@
   "main": "index.js",
   "repository": "git@github.com:cagataycali/pau-ders-bot.git",
   "author": "Çağatay Çalı",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "cron": "^1.3.0",
+    "got": "^7.1.0",
+    "moment": "^2.18.1",
+    "mongoose": "^4.11.14",
+    "neat-csv": "^2.1.0",
+    "telegraf": "^3.12.1"
+  }
 }
