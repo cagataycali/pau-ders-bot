@@ -109,7 +109,7 @@ new CronJob('0 7 * * 1-5', function () {
     .catch(error => console.log(error))
 }, null, true, 'Turkey')
 
-new CronJob('0 21 * * *', function () {
+new CronJob('0 21 * * 0-4', function () {
   findAll()
     .then(async (students) => {
       for (let student of students) {
